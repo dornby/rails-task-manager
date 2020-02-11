@@ -1,0 +1,31 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#task-details {
+  margin: 50px 0;
+  padding: 20px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.submit-btn {
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+.destroy-btn {
+  background-color: darkred;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  color: white;
+}
+
+.destroy-btn:hover {
+  text-decoration: none;
+  color: white;
+}

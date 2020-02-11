@@ -1,0 +1,10 @@
+<h1><%= @task.title.capitalize %></h1>
+<%= link_to "Edit this task", task_edit_path %>
+
+<p id="task-details"><%= @task.details.capitalize %></p>
+
+<label><input type="checkbox" <%= "checked" if @task.completed %>><span>&nbsp&nbspThis task is<%=  " not" if !@task.completed %> completed<%= " yet" if !@task.completed %>.</span></label><br>
+
+<hr/>
+<%= link_to "Back to all tasks", tasks_path %> <br><br>
+<%= link_to "Delete this task", task_path, method: :delete, data: {confirm: "Are you sure?"},class: "destroy-btn" %>
