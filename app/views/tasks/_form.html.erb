@@ -1,7 +1,7 @@
 <%= simple_form_for(task) do |f| %>
   <%= f.input :title %>
   <%= f.input :details %>
-  <% if local_assigns[:editable] %>
+  <% if !task.new_record? %>
     <%= f.input :completed, as: :boolean %>
   <% end %>
   <%= f.submit "Submit", class: "submit-btn"%>
